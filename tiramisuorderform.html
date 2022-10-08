@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiramisu Order Form</title>
+</head>
+<body>
+    
+    <form method="GET">
+        <table border="0" width="500">
+            <tr>
+                <td coolspan="2">
+                    <h1>
+                        Tiramisu Order Form   
+                    </h1>
+                    <br>
+                    <h2>
+                       Your Personal Data 
+                    </h2>
+                        <input type="text" name="Name" placeholder="Name" minlength="2" required/>
+                        <br><br>
+                        <input type="text" name="Surname" placeholder="Surname" minlength="2" required/>
+                        <br><br>
+                        <input type="email" name="Email" placeholder="Email" required/>
+                        <br><br>
+                        <input type="tel" name="Phone Number" id="Phone Number" placeholder="Phone" required pattern="\d{9}"/>
+                        <br><br>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <h2>
+                        Select Your Order
+                    </h2>
+                    <div>
+                        <input type="checkbox" id="tiramisu1"/>
+                        <label for="tiramisu1">
+                            Tiramisu Cake Gluten Free - 3$
+                        </label>
+                    </div><br>
+                    <div>
+                        <input type="checkbox" id="tiramisu2"/>
+                        <label for="tiramisu2">
+                            Tiramisu Cake Double Cream - 4$
+                            </label> 
+                    </div><br>
+                    <div>
+                        <input type="checkbox" id="tiramisu3"/>
+                        <label for="tiramisu3">
+                            Tiramisu Cake Sponge - 3$
+                        </label> 
+                    </div><br>
+                    <div>
+                        <input type="checkbox" id="tiramisu4"/>
+                        <label for="tiramisu4">
+                            Tiramisu Savoiardi Biscuit -3$
+                        </label> 
+                    </div>
+                    </td>
+               
+                <td>
+                    <h2>
+                        Quantity
+                    </h2>
+                    <input type="number" min="3" max="20" value="3"/>
+                    <br><br>
+                    <input type="number" min="3" max="20" value="3"/>
+                    <br><br>
+                    <input type="number" min="3" max="20" value="3"/>
+                    <br><br>
+                    <input type="number" min="3" max="20" value="3"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td coolspan="2">
+                    <h2>
+                        Preferred Delivery Date 
+                    </h2>
+                    <input type="date" name="delivery date"/> 
+              
+                    <h2>
+                        Preferred Delivery Time 
+                    </h2>
+                    <input type="time" name="delivery time"/> 
+               
+                    <h2>
+                        Delivery Address 
+                    </h2>
+                    <input type="text" name="Address" placeholder="Street Address" minlength="5" required/>
+                    <br><br>
+                    <input type="text" name="City" placeholder="City" minlength="3" required/>
+                    <br><br>
+                    <input type="tel" name="Zip Code" placeholder="Postal Code" required pattern="\d{5}"/>
+                    <br><br>
+                </td>
+            </tr>
+           
+            <tr style="height:200px">
+                <td>
+                    <h2>Message</h2>
+                    <textarea name="message" id="message" rows="10" cols="40" >
+
+                    </textarea>
+                    <br><br>
+                    <input type="submit" value="Submit"/>
+                    <input type="reset" value="Reset"/>
+                </td>
+              </tr>
+
+            </table>
+    </form>
+    <br><br>
+    <a href="tiramisu.html">
+        Go back!
+    </a>
+</body>
+</html>
